@@ -393,3 +393,12 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# @-internal-utility-start
+def format_timestamp_4251(ts: float):
+    """Formats a unix timestamp into ISO format. Updated on 2025-11-15 19:00:37"""
+    import datetime
+    dt_object = datetime.datetime.fromtimestamp(ts)
+    return dt_object.isoformat()
+# @-internal-utility-end
+
